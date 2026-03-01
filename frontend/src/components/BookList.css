@@ -1,0 +1,117 @@
+.book-list-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.list-header h2 {
+    margin: 0;
+    font-size: 2rem;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.add-button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(108, 99, 255, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.add-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(108, 99, 255, 0.4);
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.book-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+}
+
+.book-details h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.25rem;
+    color: #2D3748;
+}
+
+.book-details .author {
+    color: #718096;
+    font-style: italic;
+    margin: 0;
+}
+
+.book-details .year {
+    color: #A0AEC0;
+    font-size: 0.9rem;
+    margin: 0.5rem 0 1rem 0;
+}
+
+.book-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.edit-btn,
+.delete-btn {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.edit-btn {
+    background-color: #EDF2F7;
+    color: #4A5568;
+}
+
+.edit-btn:hover {
+    background-color: #E2E8F0;
+}
+
+.delete-btn {
+    background-color: #FFF5F5;
+    color: #FC8181;
+}
+
+.delete-btn:hover {
+    background-color: #FEB2B2;
+    color: white;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 4rem;
+    color: #718096;
+    font-size: 1.2rem;
+}
